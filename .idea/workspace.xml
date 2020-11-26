@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0aab68d-320c-41e6-b12b-6dba64d6de19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/dropwizard-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/dropwizard-example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/src/main/java/com/example/helloworld/resources/PeopleResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/src/main/java/com/example/helloworld/resources/PeopleResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.DockerIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.DockerIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.IntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.IntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.db.PersonDAOIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.db.PersonDAOIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.db.PersonDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.db.PersonDAOTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.PeopleResourceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.PeopleResourceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.PersonResourceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.PersonResourceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.ProtectedClassResourceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.ProtectedClassResourceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.ProtectedResourceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/TEST-com.example.helloworld.resources.ProtectedResourceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.IntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.IntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.db.PersonDAOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.db.PersonDAOTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.PeopleResourceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.PeopleResourceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.PersonResourceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.PersonResourceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.ProtectedClassResourceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.ProtectedClassResourceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.ProtectedResourceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dropwizard-example/target/surefire-reports/com.example.helloworld.resources.ProtectedResourceTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +31,27 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloWorldApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.helloworld.HelloWorldApplication" />
+      <module name="dropwizard-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.helloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloWorldApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606368869812</updated>
-      <workItem from="1606368872947" duration="3623000" />
+      <workItem from="1606368872947" duration="3934000" />
     </task>
     <servers />
   </component>
@@ -69,14 +71,18 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606372383308">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606385745389">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606372383308" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606385745389" />
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1606372048932">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1606372048932" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1606385831122">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606385831122" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
