@@ -1,0 +1,4 @@
+logging:
+  level: INFO
+  loggers:
+    [Ain.dropwizard.bootstrap: DEBUG
