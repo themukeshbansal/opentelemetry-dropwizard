@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.dropwizard:dropwizard-db:2.1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-db/2.1.0-SNAPSHOT/dropwizard-db-2.1.0-20201125.174215-194.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-db/2.1.0-SNAPSHOT/dropwizard-db-2.1.0-20201125.174215-194-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-db/2.1.0-SNAPSHOT/dropwizard-db-2.1.0-20201125.174215-194-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
