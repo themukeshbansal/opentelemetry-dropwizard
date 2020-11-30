@@ -121,7 +121,7 @@
   </dependencyManagement>
   <properties>
     <dropwizard.version>2.0.0</dropwizard.version>
-    <mainClass>in.drop.wizard.demoApplication</mainClass>
+    <mainClass>com.example.opentelemetery.demoApplication</mainClass>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

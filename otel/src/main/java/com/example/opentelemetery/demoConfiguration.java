@@ -1,4 +1,4 @@
-package in.drop.wizard;
+package com.example.opentelemetery;
 
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
