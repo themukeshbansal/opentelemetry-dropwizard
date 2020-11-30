@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>[Ain.dropwizard.bootstrap</groupId>
+    <groupId>in.drop.wizard</groupId>
     <artifactId>otel</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dropwizard.version>2.0.0</dropwizard.version>
-        <mainClass>[Ain.dropwizard.bootstrap.demoApplication</mainClass>
+        <mainClass>in.drop.wizard.demoApplication</mainClass>
     </properties>
 
     <dependencyManagement>
