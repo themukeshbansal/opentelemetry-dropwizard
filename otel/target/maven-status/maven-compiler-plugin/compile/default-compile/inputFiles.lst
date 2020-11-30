@@ -1,2 +1,5 @@
-/Users/mukesh.bansal/Public/PnP/tracingHandsOn/opentelemetry-dropwizard/otel/src/main/java/in/drop/wizard/demoApplication.java
-/Users/mukesh.bansal/Public/PnP/tracingHandsOn/opentelemetry-dropwizard/otel/src/main/java/in/drop/wizard/demoConfiguration.java
+/Users/mukesh.bansal/Public/PnP/tracingHandsOn/opentelemetry-dropwizard/otel/src/main/java/com/example/opentelemetery/health/TemplateHealthCheck.java
+/Users/mukesh.bansal/Public/PnP/tracingHandsOn/opentelemetry-dropwizard/otel/src/main/java/com/example/opentelemetery/api/Saying.java
+/Users/mukesh.bansal/Public/PnP/tracingHandsOn/opentelemetry-dropwizard/otel/src/main/java/com/example/opentelemetery/demoApplication.java
+/Users/mukesh.bansal/Public/PnP/tracingHandsOn/opentelemetry-dropwizard/otel/src/main/java/com/example/opentelemetery/demoConfiguration.java
+/Users/mukesh.bansal/Public/PnP/tracingHandsOn/opentelemetry-dropwizard/otel/src/main/java/com/example/opentelemetery/resources/HelloWorldResource.java
