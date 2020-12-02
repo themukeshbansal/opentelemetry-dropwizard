@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -13,8 +13,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
-    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-api:0.10.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-context:0.10.0" level="project" />
+    <orderEntry type="library" name="Maven: org.checkerframework:checker-qual:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-core:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-util:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.1" level="project" />
@@ -37,6 +36,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-afterburner:2.10.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.10.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.29" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-validation:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.validator:hibernate-validator:6.1.0.Final" level="project" />
     <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:2.0.2" level="project" />
@@ -52,7 +52,10 @@
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-logging:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-logback:4.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.29" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.logback:logback-throttling-appender:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:log4j-over-slf4j:1.7.29" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.29" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:9.4.24.v20191120" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-metrics:2.0.0" level="project" />
@@ -106,10 +109,20 @@
     <orderEntry type="library" name="Maven: com.helger:profiler:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-healthchecks:4.1.2" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-request-logging:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-access:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.argparse4j:argparse4j:0.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:1.0.3" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.1.11" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.1.11" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.22" level="project" />
+    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-api:0.11.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-context:0.11.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-exporter-zipkin:0.11.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-sdk:0.11.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-sdk-common:0.11.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-sdk-metrics:0.11.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-sdk-tracing:0.11.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.zipkin.reporter2:zipkin-reporter:2.12.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.zipkin.zipkin2:zipkin:2.21.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.zipkin.reporter2:zipkin-sender-okhttp3:2.12.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.squareup.okhttp3:okhttp:3.14.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.squareup.okio:okio:1.17.2" level="project" />
   </component>
 </module>

@@ -18,38 +18,57 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dropwizard.version>2.0.0</dropwizard.version>
         <mainClass>com.example.opentelemetery.demoApplication</mainClass>
+        <opentelemetry.version>0.11.0</opentelemetry.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>io.opentelemetry</groupId>
-            <artifactId>opentelemetry-api</artifactId>
-            <version>0.10.0</version>
-        </dependency>
-        <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
             <version>2.0.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>ch.qos.logback</groupId>
-                    <artifactId>logback-classic</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>ch.qos.logback</groupId>
-                    <artifactId>logback-access</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>log4j-over-slf4j</artifactId>
-                </exclusion>
-            </exclusions>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.opentelemetry</groupId>-->
+<!--            <artifactId>opentelemetry-api</artifactId>-->
+<!--            <version>${opentelemetry.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.opentelemetry</groupId>-->
+<!--            <artifactId>opentelemetry-sdk</artifactId>-->
+<!--            <version>${opentelemetry.version}</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-api</artifactId>
+            <version>0.11.0</version>
         </dependency>
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.1.11</version>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-exporter-zipkin</artifactId>
+            <version>0.11.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.zipkin.reporter2/zipkin-sender-urlconnection -->
+        <!-- https://mvnrepository.com/artifact/io.zipkin.reporter/zipkin-sender-okhttp3 -->
+<!--        <dependency>-->
+<!--            <groupId>io.zipkin.reporter</groupId>-->
+<!--            <artifactId>zipkin-sender-okhttp3</artifactId>-->
+<!--            <version>1.1.2</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/io.opentelemetry.instrumentation/opentelemetry-instrumentation-api -->
+<!--        <dependency>-->
+<!--            <groupId>io.opentelemetry.instrumentation</groupId>-->
+<!--            <artifactId>opentelemetry-instrumentation-api</artifactId>-->
+<!--            <version>0.10.2</version>-->
+<!--        </dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-exporters-logging -->
+<!--        <dependency>-->
+<!--            <groupId>io.opentelemetry</groupId>-->
+<!--            <artifactId>opentelemetry-exporters-logging</artifactId>-->
+<!--            <version>0.9.1</version>-->
+<!--        </dependency>-->
 <!--        <dependency>-->
 <!--            <groupId>javax.el</groupId>-->
 <!--            <artifactId>javax.el-api</artifactId>-->
@@ -64,117 +83,90 @@
 <!--        </dependency>-->
     </dependencies>
 
-
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <artifactId>maven-shade-plugin</artifactId>-->
-<!--                <version>3.1.1</version>-->
-<!--                <configuration>-->
-<!--                    <createDependencyReducedPom>true</createDependencyReducedPom>-->
-<!--                    <transformers>-->
-<!--                        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>-->
-<!--                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">-->
-<!--                            <mainClass>${mainClass}</mainClass>-->
-<!--                        </transformer>-->
-<!--                    </transformers>-->
-<!--                    &lt;!&ndash; exclude signed Manifests &ndash;&gt;-->
-<!--                    <filters>-->
-<!--                        <filter>-->
-<!--                            <artifact>*:*</artifact>-->
-<!--                            <excludes>-->
-<!--                                <exclude>META-INF/*.SF</exclude>-->
-<!--                                <exclude>META-INF/*.DSA</exclude>-->
-<!--                                <exclude>META-INF/*.RSA</exclude>-->
-<!--                            </excludes>-->
-<!--                        </filter>-->
-<!--                    </filters>-->
-<!--                </configuration>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <phase>package</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>shade</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <artifactId>maven-jar-plugin</artifactId>-->
-<!--                <version>3.1.0</version>-->
-<!--                <configuration>-->
-<!--                    <archive>-->
-<!--                        <manifest>-->
-<!--                            <addClasspath>true</addClasspath>-->
-<!--                            <mainClass>${mainClass}</mainClass>-->
-<!--                        </manifest>-->
-<!--                    </archive>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.8.0</version>-->
-<!--                <configuration>-->
-<!--                    <source>1.8</source>-->
-<!--                    <target>1.8</target>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <artifactId>maven-source-plugin</artifactId>-->
-<!--                <version>3.0.1</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>attach-sources</id>-->
-<!--                        <goals>-->
-<!--                            <goal>jar</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
-<!--                <version>3.0.1</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>attach-javadocs</id>-->
-<!--                        <goals>-->
-<!--                            <goal>jar</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
-
-    <reporting>
+    <build>
         <plugins>
             <plugin>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.0.0</version>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.1.1</version>
                 <configuration>
-                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-                    <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+                    <createDependencyReducedPom>true</createDependencyReducedPom>
+                    <transformers>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>${mainClass}</mainClass>
+                        </transformer>
+                    </transformers>
+                    <!-- exclude signed Manifests -->
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>${mainClass}</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
             <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.0.1</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
         </plugins>
-    </reporting>
-    <profiles>
-        <profile>
-            <id>java11+</id>
-            <activation>
-                <jdk>[11,)</jdk>
-            </activation>
-            <properties>
-                <!--
-                Workaround for "javadoc: error - The code being documented uses modules but the packages
-                defined in https://docs.oracle.com/javase/8/docs/api/ are in the unnamed module."
-                -->
-                <maven.javadoc.skip>true</maven.javadoc.skip>
-            </properties>
-        </profile>
-    </profiles>
+    </build>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jcenter</id>
+            <name>jcenter</name>
+            <url>https://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
 </project>

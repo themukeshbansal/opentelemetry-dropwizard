@@ -1,5 +1,7 @@
+com/example/opentelemetery/api/ZipkinImplementation.class
 com/example/opentelemetery/api/Saying.class
-com/example/opentelemetery/demoConfiguration.class
 com/example/opentelemetery/resources/HelloWorldResource.class
+com/example/opentelemetery/api/OpenTelemetryAppMain.class
+com/example/opentelemetery/demoConfiguration.class
 com/example/opentelemetery/health/TemplateHealthCheck.class
 com/example/opentelemetery/demoApplication.class

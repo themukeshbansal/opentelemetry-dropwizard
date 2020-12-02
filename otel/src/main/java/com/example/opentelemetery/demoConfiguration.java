@@ -2,8 +2,6 @@ package com.example.opentelemetery;
 
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.hibernate.validator.constraints.*;
-import javax.validation.constraints.*;
 import javax.validation.constraints.NotEmpty;
 
 public class demoConfiguration extends Configuration {

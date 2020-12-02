@@ -1,2 +1,6 @@
 logging:
+<<<<<<< Updated upstream
   level: INFO
+=======
+  level: DEBUG
+>>>>>>> Stashed changes

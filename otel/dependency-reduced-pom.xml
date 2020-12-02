@@ -58,58 +58,39 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-      <plugin>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>3.0.1</version>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.0.1</version>
-        <executions>
-          <execution>
-            <id>attach-javadocs</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
-  <profiles>
-    <profile>
-      <id>java11+</id>
-      <properties>
-        <maven.javadoc.skip>true</maven.javadoc.skip>
-      </properties>
-    </profile>
-  </profiles>
-  <reporting>
-    <plugins>
-      <plugin>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.0.0</version>
-        <configuration>
-          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-          <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.0.1</version>
-      </plugin>
-    </plugins>
-  </reporting>
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+      <id>jcenter</id>
+      <name>jcenter</name>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
   <properties>
     <dropwizard.version>2.0.0</dropwizard.version>
+    <opentelemetry.version>0.11.0</opentelemetry.version>
     <mainClass>com.example.opentelemetery.demoApplication</mainClass>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
