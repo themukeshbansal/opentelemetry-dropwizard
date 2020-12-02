@@ -108,17 +108,6 @@
       </plugin>
     </plugins>
   </reporting>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>io.dropwizard</groupId>
-        <artifactId>dropwizard-dependencies</artifactId>
-        <version>${dropwizard.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
   <properties>
     <dropwizard.version>2.0.0</dropwizard.version>
     <mainClass>com.example.opentelemetery.demoApplication</mainClass>

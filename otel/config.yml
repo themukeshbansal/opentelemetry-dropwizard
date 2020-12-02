@@ -1,4 +1,2 @@
 logging:
   level: INFO
-  loggers:
-    in.drop.wizard: DEBUG
